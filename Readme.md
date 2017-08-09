@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга](https://up.htmlacademy.ru/htmlcss/18/user/454995).
-* Наставник: [Дмитрий Мальнев](https://htmlacademy.ru/profile/fuckomako).
+* Наставник: [Дмитрий Мальнев](https://up.htmlacademy.ru/htmlcss/18/user/86681).
 
 
 ---
