@@ -24,7 +24,7 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры:</h2>
-          <form class="filter" metod="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
@@ -60,22 +60,25 @@
                 <div class="slider"></div>
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
+          </form>
       </section>
 
       <section class="sorting">
         <h2>Найдено:3 </h2>
-        <legend>Сортировка:</legend>
-        <ul>
-          <li class="sorting-option">
-            <button type="radio" name="sorting-option" value="price">По цене
-          </li>
-          <li class="sorting-option">
-            <button type="radio" name="sorting-option" value="type">По типу
-          </li>
-          <li class="sorting-option">
-            <button type="radio" name="sorting-option" value="rating">По рейтингу
-          </li>
-        </ul>
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <ul>
+            <li class="sorting-option">
+              <input type="radio" name="sorting-option" value="price">По цене
+            </li>
+            <li class="sorting-option">
+              <input type="radio" name="sorting-option" value="type">По типу
+            </li>
+            <li class="sorting-option">
+              <input type="radio" name="sorting-option" value="rating">По рейтингу
+            </li>
+          </ul>
+        </fieldset>
       </section>
 
       <section class="catalog">
@@ -92,7 +95,7 @@
             <p class="catalog-rating">Рейтинг</p>
             <p>
               <a href="catalog-item.html">
-                <img src="img/Amara Resorts&spa.jpg" width="135" height="90" alt="Amara Resorts&SPA">
+                <img src="img/Amara-Resorts&spa.jpg" width="135" height="90" alt="Amara Resorts&SPA">
               </a>
             </p>
               <a class="button-more" href="#">Подробнее</a>
@@ -109,7 +112,7 @@
             <p class="catalog-rating">Рейтинг</p>
             <p>
               <a href="catalog-item.html">
-                <img src="img/Desert Quail Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+                <img src="img/Desert-Quail-Inn.jpg" width="135" height="90" alt="Desert Quail Inn">
               </a>
             </p>
               <a class="button-more" href="#">Подробнее</a>
@@ -126,7 +129,7 @@
             <p class="catalog-rating">Рейтинг</p>
             <p>
               <a href="catalog-item.html">
-                <img src="img/Vilas at poco diablo.jpg" width="135" height="90" alt="Vilas at poco diablo">
+                <img src="img/Vilas-at-poco-diablo.jpg" width="135" height="90" alt="Vilas at poco diablo">
               </a>
             </p>
               <a class="button-more" href="#">Подробнее</a>
@@ -147,7 +150,7 @@
         </ul>
       </div>
       <p class="copyrighte">
-        <p>website by</p>
+        <b>website by</b>
         <a class="button" href="https://htmlacademy.ru">
           <img src="logo-name.jpg" width=115 height=41 alt="HTMLacademy">
         </a>
