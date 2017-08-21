@@ -10,3 +10,18 @@ h1,h2,h3,h4 {
   font-family: "PTSansBold";
   font-size: 21px;
 }
+
+.social-batton {
+  width: 46px;
+  height: 47px;
+  background-color: #81b3d2;
+
+}
+
+ /*ul .catalog-rating-star {
+    list-style-image: url(img/star.svg);*/
+}
+
+li .catalog-rating-star {
+    list-style: none; /* Убираем исходные маркеры */
+    background: url(img/star.svg) no-repeat 18px 17px;

@@ -22,10 +22,8 @@
 
     <main class="container">
       <section class="info">
-          <h1>SEDONA</h1>
-        <!--   <p><span>welcome</span>to the gorgeous</p>
-          <p>Because the Grand  Canyon sucks!</p>-->
-        </section>
+          <h1 class="visually-hidden">SEDONA</h1>
+      </section>
 
         <section class="features">
           <h2> Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -85,16 +83,16 @@
                и мы покажем вам лучшие предложениягостиниц в Седоне
             </p>
             <button class="hotel-search">Поиск гостиницы в Седоне</button>
-            <a href="maps.html">
-              <img src="map.jpg" width=1200 height=593 alt="Как добраться">
-            </a>
+
             <form class="hotel-search-form" method="get">
-              <label>Дата заезда:
-                <input type="text" name="arrival date" value="" placeholder="24 апреля 2016">
-              </label>
-              <label>Дата выезда:
-                <input type="text" name="departure date" value="" placeholder="4 июля 2016">
-              </label>
+              <label for="arrival-date">Дата заезда:</label>
+                <input type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2016">
+                <input type="image" src="img/calendar.svg" alt="Календарь">
+
+              <label for="departure-date">Дата выезда:</label>
+                <input type="text" name="departure-date" id="departure-date" value="" placeholder="4 июля 2016" >
+                <input type="image" src="img/calendar.svg" alt="Календарь">
+
               <label>Взрослые:
                 <input type="text" name="adult" value="" placeholder="1">
               </label>
@@ -103,6 +101,10 @@
               </label>
               <button class="button" type="submit">Найти</button>
             </form>
+
+            <a href="maps.html">
+              <img src="img/map.jpg" width=1200 height=593 alt="Как добраться">
+            </a>
           </section>
       </main>
 
@@ -110,9 +112,21 @@
         <p>#VISITSEDONA</p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-batton" href="#">Twitter</a></li>
-            <li><a class="social-batton" href="#">Facebook</a></li>
-            <li><a class="social-batton" href="#">YouTube</a></li>
+            <li>
+            <a class="social-batton" href="#">
+              <img src="img/twitter.svg" alt="Twitter">
+            </a>
+            </li>
+            <li>
+            <a class="social-batton" href="#">
+              <img src="img/fb-icon.svg" alt="Facebook">
+            </a>
+            </li>
+            <li>
+              <a class="social-batton" href="#">
+                <img src="img/youtube.svg" alt="YouTube">
+              </a>
+            </li>
           </ul>
         </div>
         <p class="copyrighte">

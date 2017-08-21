@@ -15,7 +15,7 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="maps.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-curent"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -25,7 +25,7 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтры:</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filters" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Инфраструктура:</legend>
               <ul>
@@ -58,7 +58,9 @@
 
             <fieldset>
               <legend>Стоимость в сутки(Р):</legend>
-                <div class="slider"></div>
+                <div class="slider">
+                  <input type="range" min="0" max="5000">
+                </div>
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
           </form>
@@ -80,20 +82,26 @@
             </li>
           </ul>
         </fieldset>
+        <fieldset>
+            <input type="image" src="img/icon-up-dir.svg" class="ascending sorting-option" alt="по возрастанию">
+            <input type="image" src="img/icon-down-dir.svg" class="descending sorting-option" alt="по убыванию">
+        </fieldset>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Amara Resorts&SPA</span>
-              </a>
-            </h3>
+            <h3>Amara Resorts&SPA</h3>
             <p class="catalog-category">Гостиница</p>
-            <p class="catalog-Value">От 3500Р.</p>
-            <p class="catalog-rating">Рейтинг</p>
+            <p class="catalog-Value">От 4000Р.</p>
+            <ul class="catalog-rating-star">
+              <li class="catalog-rating-star"></li>
+              <li class="catalog-rating-star"></li>
+              <li class="catalog-rating-star"></li>
+              <li class="catalog-rating-star"></li>
+            </ul>
+            <p class="catalog-rating">Рейтинг:8,5</p>
             <p>
               <a href="catalog-item.html">
                 <img src="img/Amara.jpg" width="135" height="90" alt="Amara Resorts&SPA">
@@ -102,15 +110,16 @@
               <a class="button-more" href="#">Подробнее</a>
               <a class="button-reservation" href="#">Забронировать</a>
           </li>
+
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Desert Quail Inn</span>
-              </a>
-            </h3>
+            <h3>Desert Quail Inn</h3>
             <p class="catalog-category">Мотель</p>
-            <p class="catalog-Value">От 2000Р.</p>
-            <p class="catalog-rating">Рейтинг</p>
+            <p class="catalog-Value">От 3000Р.</p>
+            <ul class="catalog-rating-star">
+              <li class="catalog-rating-star"></li>
+              <li class="catalog-rating-star"></li>
+            </ul>
+            <p class="catalog-rating">Рейтинг:8,9</p>
             <p>
               <a href="catalog-item.html">
                 <img src="img/Desert.jpg" width="135" height="90" alt="Desert Quail Inn">
@@ -119,15 +128,17 @@
               <a class="button-more" href="#">Подробнее</a>
               <a class="button-reservation" href="#">Забронировать</a>
           </li>
+
           <li class="catalog-item">
-            <h3>
-              <a href="catalog-item.html">
-                <span class="catalog-item-title">Vilas at poco diablo</span>
-              </a>
-            </h3>
+            <h3>Vilas at poco diablo</h3>
             <p class="catalog-category">Апартаменты</p>
-            <p class="catalog-Value">От 4000Р.</p>
-            <p class="catalog-rating">Рейтинг</p>
+            <p class="catalog-Value">От 2000Р.</p>
+            <ul class="catalog-rating-star">
+              <li class="catalog-rating-star"></li>
+              <li class="catalog-rating-star"></li>
+              <li class="catalog-rating-star"></li>
+            </ul>
+            <p class="catalog-rating">Рейтинг:9,2</p>
             <p>
               <a href="catalog-item.html">
                 <img src="img/Vilas.jpg" width="135" height="90" alt="Vilas at poco diablo">
@@ -145,9 +156,21 @@
       <p>#VISITSEDONA</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-batton" href="#">Twitter</a></li>
-          <li><a class="social-batton" href="#">Facebook</a></li>
-          <li><a class="social-batton" href="#">YouTube</a></li>
+          <li>
+          <a class="social-batton" href="#">
+            <img src="img/twitter.svg" alt="Twitter">
+          </a>
+          </li>
+          <li>
+          <a class="social-batton" href="#">
+            <img src="img/fb-icon.svg" alt="Facebook">
+          </a>
+          </li>
+          <li>
+            <a class="social-batton" href="#">
+              <img src="img/youtube.svg" alt="YouTube">
+            </a>
+          </li>
         </ul>
       </div>
       <p class="copyrighte">
