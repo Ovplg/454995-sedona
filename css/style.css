@@ -18,10 +18,10 @@ h1,h2,h3,h4 {
 
 }
 
- /*ul .catalog-rating-star {
-    list-style-image: url(img/star.svg);*/
+ul.catalog-rating {
+  list-style-type:none;
 }
 
-li .catalog-rating-star {
-    list-style: none; /* Убираем исходные маркеры */
-    background: url(img/star.svg) no-repeat 18px 17px;
+ul.catalog-rating li {
+  display: inline;
+}
