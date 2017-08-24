@@ -1,27 +1,342 @@
 body {
-  font-family: "PTSansRegular";
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #333333;
   text-transform: uppercase;
-  line-height: 26px;
-  color: rgb(51, 51, 51);
+  background-color: #ffffff;
+  background-image: url("img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
-h1,h2,h3,h4 {
-  font-family: "PTSansBold";
+/* index*/
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  outline: none;
+  background-color: #81b3d2;
+  border: none;
+  width: 458px;
+  height:58px;
   font-size: 21px;
+}
+
+.button:hover,
+.button:active {
+  background-color: #669ec0;
+}
+
+.button:focus{
+  color:#88b6d1;
+  background-color:#5496bd;
+}
+
+.site-navigation,
+.service-list {
+  list-style: none;
+}
+
+.site-navigation a{
+  color: #000000;
+}
+
+.site-navigation a:hover{
+  color: #81b3d2;
+}
+.site-navigation a:focus{
+  color: rgba(0,0,0,0.3);
+}
+
+.features,
+.features-item,
+.hotel-search {
+  text-align: center;
+}
+
+.features h2,
+.features-item h3,
+.service-item h4{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color:#000000;
+}
+
+.hotel-search h2{
+  font-size: 30px;
+  font-weight: bold;
+  color:#000000;
+}
+
+button.hotel-search{
+  width: 568px;
+  height:86px;
+  font:inherit;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #766357;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: bold;
+  border: none;
+  vertical-align:middle;
+  outline: none;
+}
+
+button.hotel-search:hover,
+button.hotel-search:active{
+    background-color:#604e43
+}
+
+button.hotel-search:focus{
+    background-color:#503e33;
+    color: rgba(255,255,255,0.3)
+}
+
+.hotel-search-form {
+  color:#000000;
+}
+
+.hotel-search-form input{
+  font:inherit;
+  background-color:#f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.hotel-search-form input:hover,
+.hotel-search-form input:active{
+  font:inherit;
+  background-color:#ebebeb;
+  border: none;
+  outline: none;
+}
+
+
+.hotel-search-form input:focus{
+  font:inherit;
+  background-color:#ffffff;
+  border: 2px solid;
+  border-color: #ebebeb;
+}
+
+a.copyright-logo{
+  background: url("img/logo-htmlacademy.svg");
+  width:115;
+  height:41;
+}
+
+a.copyright-logo:hover,
+a.copyright-logo:active{
+  background: url("img/logo-htmlacademy-hover.svg");
+}
+
+a.copyright-logo:focus{
+  background: url("img/logo-htmlacademy-focus.svg");
+}
+
+.footer-social ul {
+  list-style: none;
 }
 
 .social-batton {
   width: 46px;
-  height: 47px;
+  height: 48px;
   background-color: #81b3d2;
-
 }
 
+.social-batton:hover,
+.social-batton:active{
+  background-color: #669ec0;
+}
+
+.social-batton:focus{
+  background-color: #5496bd;
+}
+
+/*inner*/
+
+.site-navigation-curent{
+  color:#766357;
+}
+.filters{
+  background-image: url("img/hotels-background.jpg");
+  background-color: #678eb5;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.filters fieldset,
+.sorting fieldset{
+  border:none;
+}
+
+.filters legend{
+  font-size: 16px;
+  color:#ffffff;
+  font-weight: bold;
+}
+
+ul .filter-option,
+ul .sorting-option,
+ul.catalog-list{
+  list-style:none;
+}
+
+ul .sorting-option{
+  display: inline;
+}
+button.filter-button{
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  outline: none;
+  background: transparent;
+  background-color: transparent;
+  width: 137px;
+  height:36px;
+  font-size: 14px;
+}
+button.filter-button:hover,
+button.filter-button:active{
+  background-color: #ffffff;
+  color:#000000
+}
+
+.sorting h2{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color:#000000;
+}
+ .sorting legend{
+   font-size: 12px;
+   font-weight: normal;
+   color:#000000;
+ }
+ .sorting-option a{
+   font-size: 12px;
+   color: rgba(0,0,0,0.3);
+   font-weight: normal;
+   border-bottom: 1px dashed;
+ }
+ .sorting-option a:hover{
+   font-size: 12px;
+   color: #81b3d2;
+   font-weight: normal;
+   border-bottom: 1px dashed;
+ }
+ .sorting-option a:active{
+   font-size: 12px;
+   color: #000000;
+   font-weight: normal;
+   border-bottom:none;
+ }
+ .sorting-option a:focus{
+   font-size: 12px;
+   color: #81b3d2;
+   font-weight: normal;
+   border-bottom:none;
+ }
+
+.ascending.sorting-option a:hover{
+  image: url("img/icon-up-dir.svg");
+}
+.descending.sorting-option a:hover{
+  image: url("img/icon-down-dir.svg")
+}
+.ascending.sorting-option a:active{
+  image: url("img/icon-up-active.svg");
+}
+.descending.sorting-option a:active{
+  image: url("img/icon-down-active.svg")
+}
+
+.catalog-list a {
+  color: #000000;
+  font-size: 21px;
+  font-weight: bold;
+}
+.catalog-list a:hover {
+  color: #81b3d2;
+}
+.catalog-list a:active {
+  color: rgba(0,0,0,0.3);
+}
 ul.catalog-rating {
   list-style-type:none;
 }
 
 ul.catalog-rating li {
   display: inline;
+}
+p.catalog-rating {
+  background-color: #f2f2f2;
+  width: 110px;
+  height: 25px;
+  text-align: center;
+  color:#666666;
+  font-weight: normal;
+}
+ul.catalog-list{
+  font-weight: normal;
+}
+a.button-more {
+  font: inherit;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  vertical-align: middle;
+  outline: none;
+  background-color: #81b3d2;
+  border: none;
+  width: 110px;
+  height: 27px;
+  font-size:normal;
+}
+a.button-more:hover {
+  color:#ffffff;
+  background-color: #669ec0
+}
+a.button-more:active {
+    color:rgba(255,255,255,0.3);
+  background-color: #5496bd
+}
+
+a.button-reservation{
+  font: inherit;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  vertical-align: middle;
+  outline: none;
+  background-color: #766357;
+  border: none;
+  width: 142px;
+  height: 27px;
+  font-size:normal;
+}
+a.button-reservation:hover{
+  color:#ffffff;
+  background-color: #604e43;
+}
+a.button-reservation:active{
+  color:rgba(255,255,255,0.3);
+  background-color: #503e33;
 }
