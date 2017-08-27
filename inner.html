@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.png" width="100" height="50" alt="Седона">
@@ -22,13 +22,13 @@
       </nav>
     </header>
 
-    <main class="conteiner">
-      <h1 class="visually-hidden">Поиск отеля</h1>
+    <main class="container">
+      <!--<h1 class="visually-hidden">Поиск отеля</h1>-->
 
       <section class="filters">
-        <h2 class="visually-hidden">Фильтры:</h2>
+      <!--  <h2 class="visually-hidden">Фильтры:</h2> -->
           <form class="filters" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
@@ -43,7 +43,7 @@
               </ul>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="type">
               <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option">
@@ -58,18 +58,21 @@
               </ul>
             </fieldset>
 
+            <div class="value">
             <fieldset>
               <legend>Стоимость в сутки(Р):</legend>
                 <div class="slider">
-                  <input type="number" min="0" name="min">
-                  <input type="number" max="5000" name="max"><br>
+                  <input type="number" min="0" name="min" width="161px">
+                  <input type="number" max="5000" name="max" width="161px"><br>
                   <input type="range" min="0" max="5000">
                 </div>
             </fieldset>
             <button type="submit" class="filter-button">Показать</button>
+            </div>
           </form>
       </section>
 
+      <div class="container">
       <section class="sorting">
         <h2>Найдено:3 </h2>
         <fieldset>
@@ -95,53 +98,66 @@
             </a>
         </fieldset>
       </section>
+      </div>
 
       <section class="catalog">
-        <h2 class="visually-hidden">Список гостиниц</h2>
+      <!--  <h2 class="visually-hidden">Список гостиниц</h2>-->
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img src="img/Amara.jpg" width="135" height="90" alt="Amara Resorts&SPA">
+            <img src="img/Amara.jpg" width="135" height="90" align="left" alt="Amara Resorts&SPA">
+            <div class="hptel-description">
             <a class="hotel-name" href="catalog-item.html">Amara Resorts&SPA</a>
             <p class="catalog-category">Гостиница</p>
             <p class="catalog-Value">От 4000Р.</p>
+            <a class="button-more" href="#">Подробнее</a>
+            <a class="button-reservation" href="#">Забронировать</a>
+            </div>
+            <div class="rating">
             <ul class="catalog-rating">
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
             </ul>
-            <p class="catalog-rating">Рейтинг:8,5</p>
-              <a class="button-more" href="#">Подробнее</a>
-              <a class="button-reservation" href="#">Забронировать</a>
+              <p class="catalog-rating">Рейтинг:8,5</p>
+            </div>
           </li>
 
           <li class="catalog-item">
-            <img src="img/Desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <img src="img/Desert.jpg" width="135" height="90" align="left" alt="Desert Quail Inn">
+            <div class="hptel-description">
             <a class="hotel-name" href="catalog-item.html">Desert Quail Inn</a>
             <p class="catalog-category">Мотель</p>
             <p class="catalog-Value">От 3000Р.</p>
+              <a class="button-more" href="#">Подробнее</a>
+              <a class="button-reservation" href="#">Забронировать</a>
+            </div>
+            <div class="rating">
             <ul class="catalog-rating">
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
             </ul>
-            <p class="catalog-rating">Рейтинг:8,9</p>
-              <a class="button-more" href="#">Подробнее</a>
-              <a class="button-reservation" href="#">Забронировать</a>
+              <p class="catalog-rating">Рейтинг:8,9</p>
+            </div>
           </li>
 
           <li class="catalog-item">
-            <img src="img/Vilas.jpg" width="135" height="90" alt="Vilas at poco diablo">
+            <img src="img/Vilas.jpg" width="135" height="90" align="left" alt="Vilas at poco diablo">
+            <div class="hptel-description">
             <a class="hotel-name" href="catalog-item.html">Vilas at poco diablo</a>
             <p class="catalog-category">Апартаменты</p>
             <p class="catalog-Value">От 2000Р.</p>
+              <a class="button-more" href="#">Подробнее</a>
+              <a class="button-reservation" href="#">Забронировать</a>
+            </div>
+            <div class="rating">
             <ul class="catalog-rating">
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
               <li class="catalog-rating-star"><img src="img/star.svg" width="18" height="17" alt="star"></li>
             </ul>
             <p class="catalog-rating">Рейтинг:9,2</p>
-              <a class="button-more" href="#">Подробнее</a>
-              <a class="button-reservation" href="#">Забронировать</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -149,6 +165,7 @@
     </main>
 
     <footer class="main-footer">
+    <div class="container">
       <p>#VISITSEDONA</p>
       <div class="footer-social">
         <ul>
@@ -171,9 +188,10 @@
       </div>
       <p class="copyright">
         <b>website by</b>
-        <a href="https://htmlacademy.ru/">
+        <a a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" width=115 height=41 alt="htmlacademy">
         </a>
       </p>
+    </div>
     </footer>
 </html>
