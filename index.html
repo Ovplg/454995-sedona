@@ -11,11 +11,14 @@
     <header class="main-header container">
       <nav class="main-navigation ">
         <a class="main-header-logo">
-          <img src="img/logo.png" width="100" height="50" alt="Седона">
+          <img src="img/logo.png" width="138" height="70" alt="Седона">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation site-navigation-left">
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
+        </ul>
+
+        <ul class="site-navigation site-navigation-right">
           <li><a href="maps.html">Карта штата</a></li>
           <li><a href="inner.html">Гостиницы</a></li>
         </ul>
@@ -29,7 +32,7 @@
       </div>
 
         <section class="features">
-          <h2> Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2> Седона-небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
           <p>Рассмотрим пять причин, по которым Седона круче чем Гранд каньон!</p>
 
             <div class="container features-item1">
@@ -57,9 +60,11 @@
           </div>
 
             <div class="container features-item2">
-              <div class="features-wrapper"><h3>Там есть мост дьявола</h3>
+              <div class="features-wrapper">
+                <h3>Там есть мост дьявола</h3>
               <p>- №2 -</p>
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p></div>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
               <p class="features-item-image">
                 <img src="img/bridge.jpg" width=800 height=256 alt="Мост дьявола">
               </p>
@@ -96,20 +101,23 @@
             <button class="hotel-search">Поиск гостиницы в Седоне</button>
 
             <form class="hotel-search-form" method="get">
-              <label for="arrival-date">Дата заезда:</label>
-                <input type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2016">
-                <input type="image" src="img/calendar.svg" alt="Календарь"> <br>
+              <p class="form-fields">
+                <label for="arrival-date">Дата заезда:</label>
+                  <input class="arrival-date" type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 АПРЕЛЯ 2016" >
+              </p>
+              <p class="form-fields">
+                <label for="departure-date">Дата выезда:</label>
+                  <input class="departure-date" type="text" name="departure-date" id="departure-date" value="" placeholder="4 ИЮЛЯ 2016" >
+              </p>
+              <p class="form-fields">
+                <label>Взрослые:
+                  <input class="age adult" type="text" name="adult" value="" placeholder="1">
+                </label>
 
-              <label for="departure-date">Дата выезда:</label>
-                <input type="text" name="departure-date" id="departure-date" value="" placeholder="4 июля 2016" >
-                <input type="image" src="img/calendar.svg" alt="Календарь"> <br>
-
-              <label>Взрослые:
-                <input type="text" name="adult" value="" placeholder="1">
-              </label>
-              <label>Дети:
-                <input type="text" name  ="children" value="" placeholder="0">
-              </label> <br>
+                <label>Дети:
+                  <input class="age" type="text" name  ="children" value="" placeholder="0">
+                </label>
+              </p>
               <button class="button" type="submit">Найти</button>
             </form>
 
@@ -128,17 +136,20 @@
           <ul >
             <li>
             <a class="social-batton" href="#">
-              <img src="img/twitter.svg" alt="Twitter">
+              <span class="visually-hidden">Twitter</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><image overflow="visible" width="17" height="15" xlink:href="t.png"/><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
             </a>
             </li>
             <li>
             <a class="social-batton" href="#">
-              <img src="img/fb-icon.svg" alt="Facebook">
+              <span class="visually-hidden">Facebook</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
             </a>
             </li>
             <li>
               <a class="social-batton" href="#">
-                <img src="img/youtube.svg" alt="YouTube">
+                <span class="visually-hidden">YouTube</span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><image overflow="visible" width="20" height="16" xlink:href="youtube.png"/><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
               </a>
             </li>
           </ul>
